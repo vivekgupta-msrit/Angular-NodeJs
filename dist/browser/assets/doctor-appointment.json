@@ -1,0 +1,23 @@
+[
+  {
+    "appointmentID": "APP101",
+    "userID": "123",
+    "userName": "Mr. Rahul Gupta",
+    "appointmentDate": "28/07/2019",
+    "appointmentTime": "11:00"
+  },
+  {
+    "appointmentID": "APP102",
+    "userID": "124",
+    "userName": "Mr. Arnab Dasgupta",
+    "appointmentDate": "29/07/2019",
+    "appointmentTime": "10:30"
+  },
+  {
+    "appointmentID": "APP103",
+    "userID": "125",
+    "userName": "Mr. Aloy Gupta",
+    "appointmentDate": "30/07/2019",
+    "appointmentTime": "18:00"
+  }
+]

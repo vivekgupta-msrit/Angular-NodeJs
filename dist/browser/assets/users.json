@@ -1,0 +1,52 @@
+[
+  {
+    "userID": "123",
+    "firstName": "Rahul",
+    "lastName": "Gupta",
+    "mobileNumber": "9038234567",
+    "aadharNumber": "1234567898765432",
+    "gender": "Male",
+    "address": "ABC",
+    "zip": "123456"
+  },
+  {
+    "userID": "124",
+    "firstName": "Arnab",
+    "lastName": "Dasgupta",
+    "mobileNumber": "8967234567",
+    "aadharNumber": "6789567898765432",
+    "gender": "Male",
+    "address": "XYZ",
+    "zip": "123456"
+  },
+  {
+    "userID": "125",
+    "firstName": "Aloy",
+    "lastName": "Gupta",
+    "mobileNumber": "9038234567",
+    "aadharNumber": "1234567898765432",
+    "gender": "Male",
+    "address": "ABC",
+    "zip": "123456"
+  },
+  {
+    "userID": "126",
+    "firstName": "Vrundha",
+    "lastName": "S",
+    "mobileNumber": "9038234567",
+    "aadharNumber": "1234567898765432",
+    "gender": "Female",
+    "address": "ABC",
+    "zip": "123456"
+  },
+  {
+    "userID": "127",
+    "firstName": "Adi",
+    "lastName": "Rao",
+    "mobileNumber": "9038234567",
+    "aadharNumber": "1234567898765432",
+    "gender": "Male",
+    "address": "ABC",
+    "zip": "123456"
+  }
+]

@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="card">
+      <div class="card-header">
+        <legend><b>Book an appointment</b></legend>
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="idDoctorSelect">Select Doctor</label>
+              <select
+                class="form-control"
+                id="idDoctorSelect"
+                name="DoctorSelect"
+                [(ngModel)]="selectedDoctor"
+                (change)="onDoctorSelect()">
+                <option *ngFor="let doctor of doctorList"
+                        [ngValue]="doctor">
+                  {{ doctor.name }}
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row" *ngIf="showDoctorsDetail">
+            <div class="form-group col-md-6">
+              <label for="idClinicAddress">Clinic Address</label>
+              <input type="text" class="form-control"
+                      id="idClinicAddress" readonly="true" [value]="selectedDoctor.clinicAddress"/>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="idContactNumber">Contact Number</label>
+              <input type="text" class="form-control"
+                      id="idContactNumber" readonly="true" [value]="selectedDoctor.contactNumber"/>
+            </div>
+          </div>
+          <div class="form-row" *ngIf="showDoctorsDetail">
+            <div class="form-group col-md-6">
+              <label for="appointmentDate">Appointment Date</label>
+              <input type="text" class="form-control" required="true"
+                      id="appointmentDate" placeholder="DD/MM/YYYY" />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="appointmentTime">Appointment Time</label>
+              <input type="text" class="form-control" required="true"
+                      id="appointmentTime" placeholder="HH:MM" />
+            </div>
+          </div>
+          <button type="submit" class="btn btn-success"
+                  *ngIf="showDoctorsDetail" (click)="onBookAppointment()">
+            Book Appointment
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>

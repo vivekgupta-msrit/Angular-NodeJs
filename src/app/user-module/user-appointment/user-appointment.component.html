@@ -1,0 +1,28 @@
+<div class="container">
+    <legend><h2><b>Appointments</b></h2></legend>
+    <br>
+    <table class="table table-hover table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Doctor ID</th>
+          <th scope="col">Doctor Name</th>
+          <th scope="col">Appointment Date</th>
+          <th scope="col">Appointment Time</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let appointment of appointmentList">
+          <td>{{ appointment.doctorID }}</td>
+          <td>{{ appointment.doctorName }}</td>
+          <td>{{ appointment.appointmentDate }}</td>
+          <td>{{ appointment.appointmentTime }}</td>
+          <td *ngIf="appointment.appointmentScheduled"><button type="button"
+                      class="btn btn-danger">Cancel</button></td>
+          <td *ngIf="appointment.appointmentCompleted"><button type="button"
+            class="btn btn-success">Detail</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

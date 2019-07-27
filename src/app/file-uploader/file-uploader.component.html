@@ -1,0 +1,31 @@
+<!-- <h1>Upload file</h1>
+<form [formGroup] = "formGroup" (ngSubmit)="onSubmit()">
+ <input type="file" (change)="onFileChange($event)" />
+ <input type="submit" [disabled]="formGroup.invalid" value="upload" />
+</form> -->
+
+<!-- <form class="md-form" [formGroup] = "formGroup" (ngSubmit)="onSubmit()">
+    <div class="file-field">
+      <div class="btn btn-primary btn-sm float-left">
+        <span>Choose files</span>
+        <input type="file" multiple (change)="onFileChange($event)">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="submit" value="upload" [disabled]="formGroup.invalid">
+      </div>
+    </div>
+  </form> -->
+  <br>
+  <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <legend><b>Upload Prescription</b></legend>
+        </div>
+        <div class="card-body">
+            <form [formGroup] = "formGroup" (ngSubmit)="onSubmit()">
+                <input type="file" (change)="onFileChange($event)" />
+                <input type="submit" [disabled]="formGroup.invalid" value="upload" />
+            </form>
+        </div>
+      </div>
+    </div>

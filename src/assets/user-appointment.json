@@ -1,0 +1,26 @@
+[
+  {
+    "doctorID": "D201",
+    "doctorName": "Dr. A.B. Dutta",
+    "appointmentDate": "27/07/2019",
+    "appointmentTime": "10:30",
+    "appointmentCompleted": false,
+    "appointmentScheduled": true
+  },
+  {
+    "doctorID": "D201",
+    "doctorName": "Dr. A.B. Dutta",
+    "appointmentDate": "28/07/2019",
+    "appointmentTime": "16:00",
+    "appointmentCompleted": false,
+    "appointmentScheduled": true
+  },
+  {
+    "doctorID": "D202",
+    "doctorName": "Dr. Anup Tripathi",
+    "appointmentDate": "29/07/2019",
+    "appointmentTime": "09:30",
+    "appointmentCompleted": false,
+    "appointmentScheduled": true
+  }
+]

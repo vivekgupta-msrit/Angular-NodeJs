@@ -1,0 +1,14 @@
+[
+  {
+    "doctorID": "D201",
+    "name": "Dr. A.B. Dutta",
+    "contactNumber": "1122567890",
+    "clinicAddress": "80, MG Road, Bangalore - 560068"
+  },
+  {
+    "doctorID": "D202",
+    "name": "Dr. Anup Tripathi",
+    "contactNumber": "3412567890",
+    "clinicAddress": "56, MG Road, Bangalore - 560068"
+  }
+]

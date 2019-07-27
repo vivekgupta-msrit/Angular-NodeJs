@@ -1,0 +1,88 @@
+<!-- <p>Process appointment</p>
+ -->
+
+ <!-- <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <legend><b>Patient Details</b></legend>
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="idUserSelect">Patient Id:</label>
+              <select
+                class="form-control"
+                id="iUserSelect"
+                name="UserSelect"
+                [(ngModel)]="selectedUser"
+                (change)="onUserSelect()">
+                <option *ngFor="let user of userList"
+                        [ngValue]="user">
+                  {{ user.userID }}
+                </option>
+              </select>
+              </div>
+          </div>
+
+          <div class="form-row" *ngIf="showUserDetail">
+              <div class="form-group col-md-6">
+                <label for="idFirstName">First Name</label>
+                <input type="text" class="form-control"
+                        id="idFirstName" readonly="true" [value]="selectedUser.firstName"/>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="idLastName">Last Name</label>
+                <input type="text" class="form-control"
+                        id="idLastName" readonly="true" [value]="selectedUser.lastName"/>
+              </div>
+
+              <div class="form-group col-md-6">
+                  <label for="idMobile">Mobile No.</label>
+                  <input type="text" class="form-control"
+                          id="idMobile" readonly="true" [value]="selectedUser.mobileNumber"/>
+              </div>
+
+              <div class="form-group col-md-6">
+                  <label for="idGender">Gender</label>
+                  <input type="text" class="form-control"
+                          id="idGender" readonly="true" [value]="selectedUser.gender"/>
+                </div>
+
+            </div>
+         </form>
+      </div>
+    </div> -->
+
+<div class="container">
+     <div class="card">
+        <div class="card-header">
+            <legend><b>Patient Details</b></legend>
+          </div>
+          <div class="card-body">
+    <form>
+    <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="idFirstName">First Name</label>
+          <input type="text" class="form-control"
+                  id="idFirstName" readonly="true" [value]="userList[0].firstName"/>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="idLastName">Last Name</label>
+          <input type="text" class="form-control"
+                  id="idLastName" readonly="true" [value]="userList[0].lastName"/>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="idMobileNumber">Mobile Number</label>
+          <input type="text" class="form-control"
+                  id="idMobileNumber" readonly="true" [value]="userList[0].mobileNumber"/>
+        </div>
+      </div>
+     </form>
+     </div>
+     </div>
+     </div>
+
+
+<app-file-uploader></app-file-uploader>
+<app-file-list></app-file-list>

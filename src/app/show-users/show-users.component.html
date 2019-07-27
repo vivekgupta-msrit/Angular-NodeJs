@@ -1,0 +1,25 @@
+<div class="container">
+  <legend><h2><b>List of Users</b></h2></legend>
+  <br>
+  <table class="table table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">User ID</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Mobile Number</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let user of userList">
+        <td>{{ user.userID }}</td>
+        <td>{{ user.firstName }}</td>
+        <td>{{ user.lastName }}</td>
+        <td>{{ user.gender }}</td>
+        <td>{{ user.mobileNumber }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

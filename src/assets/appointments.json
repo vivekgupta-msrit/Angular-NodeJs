@@ -1,0 +1,23 @@
+[
+  {
+    "doctorID": "D201",
+    "doctorName": "Dr. A.B. Dutta",
+    "userID": "123",
+    "userName": "Mr. Rahul Gupta",
+    "appointmentDate": "25072019"
+  },
+  {
+    "doctorID": "D201",
+    "doctorName": "Dr. A.B. Dutta",
+    "userID": "124",
+    "userName": "Mr. Arnab Dasgupta",
+    "appointmentDate": "26072019"
+  },
+  {
+    "doctorID": "D202",
+    "doctorName": "Dr. Anup Tripathi",
+    "userID": "125",
+    "userName": "Mr. Aloy Gupta",
+    "appointmentDate": "27072019"
+  }
+]

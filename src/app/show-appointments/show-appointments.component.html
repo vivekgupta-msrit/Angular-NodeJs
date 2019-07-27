@@ -1,0 +1,25 @@
+<div class="container">
+    <legend><h2><b>Appointments</b></h2></legend>
+    <br>
+    <table class="table table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Doctor ID</th>
+          <th scope="col">Doctor Name</th>
+          <th scope="col">User ID</th>
+          <th scope="col">User Name</th>
+          <th scope="col">Appointment Date</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let appointment of appointmentList">
+          <td>{{ appointment.doctorID }}</td>
+          <td>{{ appointment.doctorName }}</td>
+          <td>{{ appointment.userID }}</td>
+          <td>{{ appointment.userName }}</td>
+          <td>{{ appointment.appointmentDate }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

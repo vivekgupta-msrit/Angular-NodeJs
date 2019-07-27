@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+  <a class="navbar-brand" href="#">Global Inclusive Health</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownUsers"
+            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Manage Users
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownUsers">
+          <a class="dropdown-item"
+            [routerLink]="['/ngo/onboard-user']"
+            routerLinkActive="router-link-active" >Onboard a New User</a>
+          <a class="dropdown-item"
+              routerLink="/ngo/users"
+              routerLinkActive="router-link-active" >Show All Users</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownAppointment"
+            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Manage Appointments
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownAppointment">
+          <a class="dropdown-item"
+              routerLink="/ngo/book-appointment"
+              routerLinkActive="router-link-active" >Book a New Appointment</a>
+          <a class="dropdown-item"
+              routerLink="/ngo/appointments"
+              routerLinkActive="router-link-active" >Show All Appointments</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+          <a class="nav-link" routerLink="/ngo/ngo-reporting"
+          routerLinkActive="router-link-active" >Reporting<span class="sr-only"></span></a>
+       </li>
+    </ul>
+  </div>
+</nav>
+<br>
